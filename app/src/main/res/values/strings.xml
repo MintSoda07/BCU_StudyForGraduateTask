@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">TestingApplication</string>
+    <string name="app_name" translatable="false">BCU Project</string>
+    <string name="email_placeholder">Email</string>
+    <string name="password_placeholder">Password</string>
+    <string name="submit_signIn">Sign in</string>
+    <string name="wrong_Auth">Incorrect Email or Password. Please Try Again or Sign Up.</string>
+    <string name="auth_Passed">Sign In Successfully.</string>
+    <string name="sign_up_text">If you don\'t have an account, Sign Up HERE.</string>
+    <string name="no_email">Email cannot be empty.</string>
+    <string name="no_password">Password cannot be empty.</string>
+
+    <string name="copyright" translatable="false">Copyright © 2017-2024, Eunbin Jeong (Dalgona.) project-neodgm@dalgona.dev with reserved font name "Neo둥근모 Pro" and "NeoDunggeunmo Pro".
+        \nCopyright © T’way Air Co.,Ltd. All rights reserved.(font)
+    </string>
 </resources>

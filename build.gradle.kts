@@ -2,4 +2,7 @@
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
+
+    // 파이어베이스 플러그인 추가 (프로젝트 수준)
+    id("com.google.gms.google-services") version "4.4.2" apply false
 }
