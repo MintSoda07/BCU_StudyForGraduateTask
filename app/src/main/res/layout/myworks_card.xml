@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#E0F7FA">
+    android:padding="16dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -25,7 +24,7 @@
             <ImageView
                 android:id="@+id/headerImage"
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"
+                android:layout_height="125dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -37,9 +36,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:text="TextView"
-                android:textColor="#525252"
+                android:textColor="#03A9F4"
                 android:textColorHighlight="#FF3B3B"
-                android:textSize="48sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -49,25 +48,18 @@
                 android:id="@+id/subTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="sans-serif"
                 android:text="TextView"
-                android:textSize="24sp"
+                android:textColor="#00BCD4"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/headerTitle" />
 
-            <TextView
-                android:id="@+id/cardBodyTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:fontFamily="sans-serif"
-                android:text="TextView"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/subTitle" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
