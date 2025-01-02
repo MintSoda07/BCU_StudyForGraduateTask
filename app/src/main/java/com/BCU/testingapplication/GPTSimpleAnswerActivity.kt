@@ -105,7 +105,6 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
                 userPromptInputHintBox.requestFocus()
                 userPromptInputHintBox.hint = getString(R.string.gpt_input_empty_warn)
             }else{
-                userPromptInput.setText("")
                 // 유저의 질문을 메시지로 생성하는 부분
                 isWaiting = true
                 buttonSend.translationZ = 0f
@@ -116,6 +115,8 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
                     chatText = userPromptInput.text.toString(),
                     isUser = true
                 )
+                userPromptInput.setText("")
+
                 chatAdapter.addMessage(userMessage)
                 chatListView.scrollToPosition(chatAdapter.itemCount - 1)
 
