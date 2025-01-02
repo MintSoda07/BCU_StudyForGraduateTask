@@ -5,7 +5,7 @@
     <string name="submit_signIn">Sign in</string>
     <string name="wrong_Auth">Incorrect Email or Password. Please Try Again or Sign Up.</string>
     <string name="auth_Passed">Sign In Successfully.</string>
-    <string name="sign_up_text">If you don\'t have an account, Sign Up HERE.</string>
+    <string name="sign_up_text">If you don\'t have an account, Sign Up here.</string>
     <string name="no_email">Email cannot be empty.</string>
     <string name="no_password">Password cannot be empty.</string>
     <string name="title_gpt" translatable="false">Chat GPT API</string>
@@ -17,6 +17,9 @@
     <string name="gpt_waiting_str">GPT is thinking.. please await.</string>
     <string name="gpt_error">Sorry, GPT is not working for now. Please try it later.</string>
     <string name="gpt_init_str">Hello! I\'m chat GPT. Nice to Meet You! :)</string>
+    <string name="logout_str">Sign out</string>
+    <string name="logout_warn">Will you really want to quit?</string>
+    <string name="byte_coin">Byte</string>
 
     <string name="copyright" translatable="false">"Copyright © 2017-2024, Eunbin Jeong (Dalgona.) project-neodgm@dalgona.dev with reserved font name \"Neo둥근모 Pro\" and \"NeoDunggeunmo Pro\".          Copyright © T&#39;way Air Co.,Ltd. All rights reserved.(font)     "</string>
 </resources>

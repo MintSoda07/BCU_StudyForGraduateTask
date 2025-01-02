@@ -40,23 +40,6 @@
             android:textSize="20sp" />
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/ChatRecycleView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="7.5dp" />
-    </ScrollView>
-
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
@@ -73,8 +56,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_inputParent"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
                 android:hint="@string/gpt_send_hint"
                 android:textColorHint="#B4B4B4"
                 app:hintAnimationEnabled="true"
@@ -84,6 +68,7 @@
                     android:id="@+id/text_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_weight="4"
                     android:textSize="12sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -93,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_weight="11"
                 android:backgroundTint="#03A9F4"
                 android:elevation="6dp"
                 android:text="@string/send_button"
@@ -107,5 +92,23 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ChatRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7.5dp" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

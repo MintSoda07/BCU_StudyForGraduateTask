@@ -16,4 +16,7 @@
     <string name="gpt_waiting_str">GPT가 생각중입니다. 잠시만 기다려주세요.</string>
     <string name="gpt_error">GPT가 지금은 작동하지 않습니다. 다음에 다시 시도해 주세요.</string>
     <string name="gpt_init_str">안녕하세요! 저는 챗 GPT입니다. 만나서 반갑습니다!</string>
+    <string name="logout_str">로그아웃</string>
+    <string name="logout_warn">로그아웃 하시겠습니까?</string>
+    <string name="byte_coin">바이트</string>
 </resources>

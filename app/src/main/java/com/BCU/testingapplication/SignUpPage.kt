@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.auth.FirebaseAuth
 
 class SignUpPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,23 @@ class SignUpPage : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        TODO()
+        // FirebaseAuth 초기화
+
+
     }
+    /*fun auth_create(){
+        val auth = FirebaseAuth.getInstance()
+
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    // 사용자 생성 성공
+                    val user = auth.currentUser
+                    Toast.makeText(baseContext, "회원가입 성공: ${user?.email}", Toast.LENGTH_SHORT).show()
+                } else {
+                    // 실패 시 오류 처리
+                    Toast.makeText(baseContext, "회원가입 실패: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+    }*/
 }

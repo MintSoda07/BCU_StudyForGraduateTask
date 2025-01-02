@@ -27,13 +27,17 @@ class LoginActivity : AppCompatActivity() {
         val passwordPlaceHolderForLogin = findViewById<TextView>(R.id.passwordTextview)
         val submitButtonLogin = findViewById<Button>(R.id.logInButton)
         val loginFailedMessageTextView = findViewById<TextView>(R.id.warningText)
+        val signUpButton = findViewById<TextView>(R.id.signUpText)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        signUpButton.setOnClickListener{
+            val signIpPageRedirect = Intent(this@LoginActivity, SignUpPage::class.java)
+            startActivity(signIpPageRedirect)
+        }
         submitButtonLogin.setOnClickListener {
             val emailText = emailPlaceHolderForLogin.text.toString()
             val passwordText = passwordPlaceHolderForLogin.text.toString()

@@ -3,6 +3,7 @@ package com.BCU.testingapplication
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -38,6 +39,8 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN or WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_gptsimple_answer)
@@ -102,6 +105,7 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
                 userPromptInputHintBox.requestFocus()
                 userPromptInputHintBox.hint = getString(R.string.gpt_input_empty_warn)
             }else{
+                userPromptInput.setText("")
                 // 유저의 질문을 메시지로 생성하는 부분
                 isWaiting = true
                 buttonSend.translationZ = 0f

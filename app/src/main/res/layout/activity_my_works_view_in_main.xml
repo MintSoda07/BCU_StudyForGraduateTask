@@ -11,14 +11,14 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4">
 
         <GridView
             android:id="@+id/gridCardStorage"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="603dp"
             android:columnWidth="320dp"
             android:horizontalSpacing="5dp"
             android:minHeight="375dp"
@@ -29,9 +29,52 @@
     </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="10sp"
+            android:layout_height="42sp"
+            android:layout_weight="0.7"
+            android:backgroundTint="#00FFFFFF"
+            android:text="@string/logout_str"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="간장공장공장장"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/remainMiles"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elegantTextHeight="true"
+            android:gravity="center|right"
+            android:text="1200 바이트"
+            android:textColor="#FFC107"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -41,27 +84,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/tway_flying"
+            android:text="Button"
+            android:textColor="#03A9F4" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/tway_flying"
+            android:text="Button"
+            android:textColor="#03A9F4" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/tway_flying"
+            android:text="Button"
+            android:textColor="#03A9F4" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
