@@ -14,6 +14,12 @@
         android:windowSoftInputMode="adjustPan"
         tools:targetApi="35">
         <activity
+            android:name=".SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".GPTSimpleAnswerActivity"
+            android:exported="false" />
+        <activity
             android:name=".MyWorksViewInMainActivity"
             android:exported="false" />
         <activity

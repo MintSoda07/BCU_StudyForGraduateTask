@@ -8,8 +8,15 @@
     <string name="sign_up_text">If you don\'t have an account, Sign Up HERE.</string>
     <string name="no_email">Email cannot be empty.</string>
     <string name="no_password">Password cannot be empty.</string>
+    <string name="title_gpt" translatable="false">Chat GPT API</string>
+    <string name="subtitle_gpt">Intergrate ChatGPT API with Application.</string>
+    <string name="get_back_button">Back</string>
+    <string name="send_button">Send</string>
+    <string name="gpt_send_hint">Let\'s talk with ChatGPT!</string>
+    <string name="gpt_input_empty_warn">Please write the message.</string>
+    <string name="gpt_waiting_str">GPT is thinking.. please await.</string>
+    <string name="gpt_error">Sorry, GPT is not working for now. Please try it later.</string>
+    <string name="gpt_init_str">Hello! I\'m chat GPT. Nice to Meet You! :)</string>
 
-    <string name="copyright" translatable="false">Copyright © 2017-2024, Eunbin Jeong (Dalgona.) project-neodgm@dalgona.dev with reserved font name "Neo둥근모 Pro" and "NeoDunggeunmo Pro".
-        \nCopyright © T’way Air Co.,Ltd. All rights reserved.(font)
-    </string>
+    <string name="copyright" translatable="false">"Copyright © 2017-2024, Eunbin Jeong (Dalgona.) project-neodgm@dalgona.dev with reserved font name \"Neo둥근모 Pro\" and \"NeoDunggeunmo Pro\".          Copyright © T&#39;way Air Co.,Ltd. All rights reserved.(font)     "</string>
 </resources>

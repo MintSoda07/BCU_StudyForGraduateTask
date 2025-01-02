@@ -19,11 +19,12 @@
             android:id="@+id/gridCardStorage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:columnWidth="200dp"
-            android:horizontalSpacing="10dp"
+            android:columnWidth="320dp"
+            android:horizontalSpacing="5dp"
+            android:minHeight="375dp"
             android:numColumns="2"
             android:stretchMode="columnWidth"
-            android:verticalSpacing="10dp" />
+            android:verticalSpacing="20dp" />
 
     </FrameLayout>
 
