@@ -28,14 +28,14 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
     private lateinit var userPromptInputHintBox: TextInputLayout
     private lateinit var chatListView: RecyclerView
     private lateinit var buttonSend : Button
+
+    private var userProfileImage = 0
+    private lateinit var userProfileName : String
     private var isWaiting = false
 
     // 오픈AI 클라스 선언, GPT 실행 준비
     val openAIClient = OpenAI(com.BCU.testingapplication.BuildConfig.GPT_API_KEY)
 
-    // 유저의 프로필 정보
-    val userProfileImage = R.drawable.bcu_project_icon
-    val userProfileName = "hello"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,6 +57,25 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
         userPromptInputHintBox = findViewById(R.id.text_inputParent)
 
         val goBackBtn = findViewById<Button>(R.id.back_button)
+
+
+        // 유저의 프로필 정보
+        val userData = UserData()
+
+        userProfileImage = R.drawable.bcu_project_icon
+        userProfileName = "Traveler"
+        // 유저 데이터를 받아오는 콜백
+        userData.getUserData { user ->
+            if (user != null) {
+                userProfileName = user.displayName ?: "Unknown"
+                userProfileImage = user.profileImageUrl?.toInt() ?: 0
+            } else {
+                //Error
+            }
+        }
+
+
+
 
         // 리스너 목록 // 버튼의 동작 처리
         // 뒤로가기 버튼

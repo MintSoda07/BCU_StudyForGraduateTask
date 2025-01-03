@@ -56,21 +56,24 @@ android {
 
 dependencies {
     // 파이어베이스 BOM
-    implementation("com.google.firebase:firebase-bom:33.7.0")
-    implementation("com.google.firebase:firebase-auth:22.3.0")
-    implementation("com.google.firebase:firebase-auth-ktx:22.3.0")
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.firestore)
+    implementation(libs.google.firebase.firestore.ktx)
 
-    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation(libs.play.services.auth)
+    implementation(libs.play.services.auth.v2001)
 
     // 안드로이드X 카드뷰
-    implementation("androidx.cardview:cardview:1.0.0")
+    implementation(libs.androidx.cardview)
 
     // WebRTC , HTTP , JSON 처리용
-    implementation("io.getstream:stream-webrtc-android:1.3.6")
-    implementation ("org.greenrobot:eventbus:3.2.0")
-    implementation("com.squareup.okhttp3:okhttp:4.10.0") // HTTP 요청 라이브러리
-    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
-    implementation("com.google.code.gson:gson:2.8.9")  // JSON 파싱 라이브러리
+    implementation(libs.stream.webrtc.android)
+    implementation (libs.eventbus)
+    implementation(libs.okhttp) // HTTP 요청 라이브러리
+    implementation(libs.logging.interceptor)
+    implementation(libs.gson)  // JSON 파싱 라이브러리
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

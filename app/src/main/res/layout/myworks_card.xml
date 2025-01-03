@@ -40,6 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="95dp"
                     android:elevation="5dp"
+                    android:scaleType="centerCrop"
                     android:translationZ="4dp"
                     app:srcCompat="@drawable/api_test_icon" />
             </androidx.cardview.widget.CardView>

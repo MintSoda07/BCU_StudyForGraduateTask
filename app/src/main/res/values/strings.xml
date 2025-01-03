@@ -19,13 +19,30 @@
     <string name="gpt_init_str">Hello! I\'m chat GPT. Nice to Meet You! :)</string>
     <string name="logout_str">Sign out</string>
     <string name="logout_warn">Will you really want to quit?</string>
+    <string name="ans_yes">Yes</string>
+    <string name="ans_no">No</string>
     <string name="byte_coin">Byte</string>
     <string name="localize_title">App Localizing</string>
-    <string name="localize_text">This text can be translated into other languages. Change your phone\'s language to try on!</string>
+    <string name="localize_subtitle">The app environment changes depending on the language.</string>
+    <string name="localize_text">This text can be translated into other languages. \nChange your phone\'s language to try on!</string>
     <string name="byte_shop">Byte shop</string>
     <string name="bcu_introduce">About Project</string>
     <string name="my_profile">My Profile</string>
-    <string name="Signout_successful">You have successfully signed out.</string>
+    <string name="signout_successful">You have successfully signed out.</string>
+    <string name="swipe_left">Swipe to the left to explore more cards!</string>
+    <string name="sign_up_name">Name</string>
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_password">Password</string>
+    <string name="sign_up_title">SignUp Page</string>
+    <string name="sign_up_check">Validation Check</string>
+    <string name="sign_up_done">Sign Up</string>
+    <string name="sign_up_completed">Your sign-up is complete.</string>
+    <string name="no_name">Please enter your name.</string>
+    <string name="fail_sign_up">Sorry, an unknown error has occurred during sign-up.</string>
+    <string name="name_over_limit">The name must be within 8 characters.</string>
+    <string name="pwd_over_limit">The password must be between 8 and 32 characters.</string>
+    <string name="wait_please">Please wait a moment.</string>
+    <string name="pwd_validate">The password must include at least one uppercase letter, one lowercase letter, and one number.</string>
 
     <string name="copyright" translatable="false">"Copyright © 2017-2024, Eunbin Jeong (Dalgona.) project-neodgm@dalgona.dev with reserved font name \"Neo둥근모 Pro\" and \"NeoDunggeunmo Pro\".          Copyright © T&#39;way Air Co.,Ltd. All rights reserved.(font)     "</string>
 </resources>
