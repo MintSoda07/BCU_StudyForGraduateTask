@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_placeholder">メールアドレス</string>
+    <string name="password_placeholder">パスワード</string>
+    <string name="submit_signIn">ログイン</string>
+    <string name="wrong_Auth">メールアドレスまたはパスワードが間違っています。もう一度試すか、新規登録してください。</string>
+    <string name="auth_Passed">ログインに成功しました。</string>
+    <string name="sign_up_text">アカウントをお持ちでない場合は、こちらで新規登録してください。</string>
+    <string name="no_email">メールアドレスを入力してください。</string>
+    <string name="no_password">パスワードを入力してください。</string>
+    <string name="subtitle_gpt">ChatGPT APIをアプリケーションに統合します。</string>
+    <string name="get_back_button">戻る</string>
+    <string name="send_button">送信</string>
+    <string name="gpt_send_hint">ChatGPTと話しましょう！</string>
+    <string name="gpt_input_empty_warn">メッセージを入力してください。</string>
+    <string name="gpt_waiting_str">GPTが考えています...お待ちください。</string>
+    <string name="gpt_error">申し訳ありませんが、現在GPTが動作していません。後でもう一度お試しください。</string>
+    <string name="gpt_init_str">こんにちは！私はChat GPTです。よろしくお願いします！ :)</string>
+    <string name="logout_str">ログアウト</string>
+    <string name="logout_warn">本当に終了しますか？</string>
+    <string name="byte_coin">バイト</string>
+    <string name="localize_title">アプリのローカライズ</string>
+    <string name="localize_text">このテキストは他の言語に翻訳できます。お使いの電話の言語を変更して試してみてください！</string>
+    <string name="byte_shop">バイトショップ</string>
+    <string name="bcu_introduce">プロジェクトについて</string>
+    <string name="my_profile">私のプロフィール</string>
+    <string name="Signout_successful">正常にサインアウトしました。</string>
+</resources>

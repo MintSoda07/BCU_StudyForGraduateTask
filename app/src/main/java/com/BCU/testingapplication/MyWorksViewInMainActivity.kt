@@ -3,6 +3,7 @@ package com.BCU.testingapplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.AdapterView
+import android.widget.Button
 import android.widget.GridView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.BCU.testingapplication.databinding.MyworksCardBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MyWorksViewInMainActivity : AppCompatActivity() {
 
@@ -19,6 +21,7 @@ class MyWorksViewInMainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_my_works_view_in_main)
 
         val gridView: GridView = findViewById(R.id.gridCardStorage)
+        val logOutButton = findViewById<Button>(R.id.logoutButton)
 
         // 샘플 데이터 생성
         val items = listOf(
@@ -47,6 +50,18 @@ class MyWorksViewInMainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
             }
+        }
+
+        // LogOut 뷰 리스너 추가
+        logOutButton.setOnClickListener{
+
+                // 로그아웃이 이루어지는 함수
+                FirebaseAuth.getInstance().signOut()
+
+                Toast.makeText(applicationContext, R.string.auth_Passed,Toast.LENGTH_LONG).show()
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
         }
     }
 

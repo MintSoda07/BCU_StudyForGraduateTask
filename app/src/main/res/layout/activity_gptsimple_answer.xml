@@ -8,107 +8,104 @@
     tools:context=".GPTSimpleAnswerActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#03A9F4"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/tway_fly"
-            android:text="@string/get_back_button"
-            android:textColor="#03A9F4"
-            android:textSize="20sp"
-            app:icon="@android:drawable/ic_menu_close_clear_cancel"
-            app:iconSize="24dp"
-            app:iconTint="#03A9F4" />
-
-        <TextView
-            android:id="@+id/title_GPT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            android:fontFamily="@font/tway_fly"
-            android:text="@string/title_gpt"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
-
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="left"
-            android:measureWithLargestChild="false"
+            android:background="#03A9F4"
             android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_inputParent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:hint="@string/gpt_send_hint"
-                android:textColorHint="#B4B4B4"
-                app:hintAnimationEnabled="true"
-                app:hintTextColor="#A2A2A2">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/text_input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:textSize="12sp" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
             <Button
-                android:id="@+id/send_button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="11"
-                android:backgroundTint="#03A9F4"
-                android:elevation="6dp"
-                android:text="@string/send_button"
-                android:textSize="12sp"
-                android:translationZ="5dp"
-                app:icon="@android:drawable/ic_menu_send"
-                app:iconGravity="end"
-                app:iconSize="20dp"
-                app:iconTint="#FFFFFF" />
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:text="@string/get_back_button"
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                app:iconSize="24dp"
+                app:iconTint="#03A9F4" />
+
+            <TextView
+                android:id="@+id/title_localize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/title_gpt"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="3dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/ChatRecycleView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
             android:padding="7.5dp" />
-    </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:measureWithLargestChild="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_inputParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="@string/gpt_send_hint"
+                    android:textColorHint="#B4B4B4"
+                    app:hintAnimationEnabled="true"
+                    app:hintTextColor="#A2A2A2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/send_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="11"
+                    android:backgroundTint="#03A9F4"
+                    android:elevation="6dp"
+                    android:text="@string/send_button"
+                    android:textSize="12sp"
+                    android:translationZ="5dp"
+                    app:icon="@android:drawable/ic_menu_send"
+                    app:iconGravity="end"
+                    app:iconSize="20dp"
+                    app:iconTint="#FFFFFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

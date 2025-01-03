@@ -35,11 +35,11 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
 
     // 유저의 프로필 정보
     val userProfileImage = R.drawable.bcu_project_icon
-    val userProfileName = "감자전"
+    val userProfileName = "hello"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN or WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN or WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
 
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -57,10 +57,6 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
         userPromptInputHintBox = findViewById(R.id.text_inputParent)
 
         val goBackBtn = findViewById<Button>(R.id.back_button)
-
-        // 오픈AI 클라스 선언
-        val openAIClient = OpenAI(com.BCU.testingapplication.BuildConfig.GPT_API_KEY)
-
 
         // 리스너 목록 // 버튼의 동작 처리
         // 뒤로가기 버튼
@@ -85,7 +81,7 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
             message(
                 chatAvatar = R.drawable.gpt_title,
                 chatName = "ChatGPT",
-                chatText =getString(R.string.gpt_init_str),
+                chatText = getString(R.string.gpt_init_str),
                 isUser = false
             )
         )
@@ -131,7 +127,7 @@ class GPTSimpleAnswerActivity : AppCompatActivity() {
                             val responseMessage = message(
                                 chatAvatar = R.drawable.gpt_title,
                                 chatName = "ChatGPT",
-                                chatText = response,
+                                chatText = response.replace("**", ""),
                                 isUser = false
                             )
                             chatAdapter.addMessage(responseMessage)

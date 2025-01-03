@@ -4,7 +4,7 @@
     <string name="password_placeholder">Password</string>
     <string name="submit_signIn">Sign in</string>
     <string name="wrong_Auth">Incorrect Email or Password. Please Try Again or Sign Up.</string>
-    <string name="auth_Passed">Sign In Successfully.</string>
+    <string name="auth_Passed">You have successfully signed In.</string>
     <string name="sign_up_text">If you don\'t have an account, Sign Up here.</string>
     <string name="no_email">Email cannot be empty.</string>
     <string name="no_password">Password cannot be empty.</string>
@@ -20,6 +20,12 @@
     <string name="logout_str">Sign out</string>
     <string name="logout_warn">Will you really want to quit?</string>
     <string name="byte_coin">Byte</string>
+    <string name="localize_title">App Localizing</string>
+    <string name="localize_text">This text can be translated into other languages. Change your phone\'s language to try on!</string>
+    <string name="byte_shop">Byte shop</string>
+    <string name="bcu_introduce">About Project</string>
+    <string name="my_profile">My Profile</string>
+    <string name="Signout_successful">You have successfully signed out.</string>
 
     <string name="copyright" translatable="false">"Copyright © 2017-2024, Eunbin Jeong (Dalgona.) project-neodgm@dalgona.dev with reserved font name \"Neo둥근모 Pro\" and \"NeoDunggeunmo Pro\".          Copyright © T&#39;way Air Co.,Ltd. All rights reserved.(font)     "</string>
 </resources>

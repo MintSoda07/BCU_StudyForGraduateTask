@@ -19,4 +19,10 @@
     <string name="logout_str">로그아웃</string>
     <string name="logout_warn">로그아웃 하시겠습니까?</string>
     <string name="byte_coin">바이트</string>
+    <string name="localize_title">앱 현지화</string>
+    <string name="localize_text">이 텍스트는 다른 언어로 번역될 수 있습니다. 지금 휴대폰의 언어를 바꾸어 보세요!</string>
+    <string name="byte_shop">바이트 상점</string>
+    <string name="bcu_introduce">프로젝트 소개</string>
+    <string name="my_profile">내 프로필</string>
+    <string name="Signout_successful">성곻적으로 로그아웃 되었습니다.</string>
 </resources>

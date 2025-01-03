@@ -8,106 +8,121 @@
     android:background="#E0F2FF"
     tools:context=".MyWorksViewInMainActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout4">
-
-        <GridView
-            android:id="@+id/gridCardStorage"
-            android:layout_width="match_parent"
-            android:layout_height="603dp"
-            android:columnWidth="320dp"
-            android:horizontalSpacing="5dp"
-            android:minHeight="375dp"
-            android:numColumns="2"
-            android:stretchMode="columnWidth"
-            android:verticalSpacing="20dp" />
-
-    </FrameLayout>
-
     <LinearLayout
-        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#03A9F4"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/logoutButton"
-            android:layout_width="10sp"
-            android:layout_height="42sp"
-            android:layout_weight="0.7"
-            android:backgroundTint="#00FFFFFF"
-            android:text="@string/logout_str"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp" />
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="#03A9F4"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/userName"
-            android:layout_width="12dp"
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="180sp"
+                android:layout_height="42sp"
+                android:layout_weight="0.15"
+                android:backgroundTint="#2196F3"
+                android:text="@string/logout_str"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="330sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="Temp_Nickname"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/remainMiles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:elegantTextHeight="true"
+                android:gravity="center|right"
+                android:text="1200"
+                android:textColor="#FFC107"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1.1"
-            android:gravity="center"
-            android:text="간장공장공장장"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/remainMiles"
-            android:layout_width="12dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:elegantTextHeight="true"
-            android:gravity="center|right"
-            android:text="1200 바이트"
-            android:textColor="#FFC107"
-            android:textSize="14sp" />
+            <GridView
+                android:id="@+id/gridCardStorage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="320dp"
+                android:horizontalSpacing="5dp"
+                android:minHeight="375dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp" />
 
-    </LinearLayout>
+        </FrameLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#03A9F4"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/tway_flying"
-            android:text="Button"
-            android:textColor="#03A9F4" />
+            android:layout_weight="0"
+            android:background="#03A9F4"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/tway_flying"
-            android:text="Button"
-            android:textColor="#03A9F4" />
+            <Button
+                android:id="@+id/byteShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/tway_flying"
+                android:text="@string/byte_shop"
+                android:textColor="#03A9F4"
+                android:textSize="12sp"
+                app:icon="@drawable/byte_icon"
+                app:iconSize="18dp"
+                app:iconTint="#2196F3" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/tway_flying"
-            android:text="Button"
-            android:textColor="#03A9F4" />
+            <Button
+                android:id="@+id/introduceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/tway_flying"
+                android:text="@string/bcu_introduce"
+                android:textColor="#03A9F4"
+                android:textSize="12sp"
+                app:icon="@drawable/bcu_project_icon"
+                app:iconTint="#2196F3" />
+
+            <Button
+                android:id="@+id/ProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/tway_flying"
+                android:text="@string/my_profile"
+                android:textColor="#03A9F4"
+                android:textSize="12sp"
+                app:icon="@android:drawable/ic_menu_edit"
+                app:iconTint="#2196F3" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
